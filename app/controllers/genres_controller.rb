@@ -5,6 +5,7 @@ class GenresController < ApplicationController
 
   def create
     genre = Genre.create(post_params)
+    redirect_to genre_path(genre)
   end
 
   def edit
