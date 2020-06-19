@@ -6,6 +6,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    raise params.inspect
     song = Song.create(post_params)
     redirect_to song_path(song)
   end
