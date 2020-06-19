@@ -1,5 +1,6 @@
 class ArtistsController < ApplicationController
   def new
+    @Artist
   end
 
   def create
@@ -15,5 +16,5 @@ class ArtistsController < ApplicationController
 
   def show
   end
-  
+
 end
