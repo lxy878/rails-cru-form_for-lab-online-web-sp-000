@@ -18,4 +18,7 @@ class ArtistsController < ApplicationController
     @artist = Artist.find(params[:id])
   end
 
+  def post_params
+
+  end
 end
