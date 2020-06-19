@@ -1,5 +1,6 @@
 class GenresController < ApplicationController
   def new
+    @gener = Gener.new
   end
 
   def create
@@ -7,10 +8,11 @@ class GenresController < ApplicationController
   end
 
   def edit
-
+    @gener = Gener.find(params[:id])
   end
 
   def update
+    gener = Gener.find(params[:id])
   end
 
   def show
