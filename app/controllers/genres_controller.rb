@@ -4,19 +4,19 @@ class GenresController < ApplicationController
   end
 
   def create
-    gener = Genre
+    genre = Genre
   end
 
   def edit
-    @gener = Gener.find(params[:id])
+    @genre = Genre.find(params[:id])
   end
 
   def update
-    gener = Gener.find(params[:id])
+    genre = Genre.find(params[:id])
   end
 
   def show
-    @gener = Gener.find(params[:id])
+    @genre = Genre.find(params[:id])
   end
 
   def post_params
