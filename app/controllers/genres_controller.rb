@@ -15,4 +15,8 @@ class GenresController < ApplicationController
 
   def show
   end
+
+  def post_params
+
+  end
 end
