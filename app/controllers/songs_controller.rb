@@ -7,6 +7,7 @@ class SongsController < ApplicationController
 
   def create
     raise params.inspect
+    song = Song.create()
   end
 
   def edit
@@ -25,5 +26,8 @@ class SongsController < ApplicationController
   end
 
   def index
+  end
+  def post_params
+
   end
 end
