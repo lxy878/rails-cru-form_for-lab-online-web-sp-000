@@ -1,10 +1,10 @@
 class GenresController < ApplicationController
   def new
-    @gener = Gener.new
+    @genre = Genre.new
   end
 
   def create
-
+    gener = Genre
   end
 
   def edit
