@@ -2,7 +2,7 @@
 <%= form_for @song do |f|%>
   <%= f.label :name %>
   <%= f.text_field :name%><br>
-  <%= f.check_box(:artist_id,{}, 'yes', nil)%>
+  <%= f.check_box(:artist_id,{}, 'yes', [])%>
   <!-- <% @artists.each do |artist|%>
     <%= f.check_box :artist_id %>
   <% end %> -->
