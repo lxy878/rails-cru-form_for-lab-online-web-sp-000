@@ -14,6 +14,7 @@ class GenresController < ApplicationController
   end
 
   def show
+    @gener = Gener.find(params[:id])
   end
 
   def post_params
