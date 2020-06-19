@@ -1,12 +1,12 @@
 class SongsController < ApplicationController
   def new
     @song = Song.new
-    @artist = Artist.all
-    @genre = Genre.all
+    @artists = Artist.all
+    @genres = Genre.all
   end
 
   def create
-
+    raise params.inspect
   end
 
   def edit
