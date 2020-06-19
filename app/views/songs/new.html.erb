@@ -2,7 +2,7 @@
 <%= form_for @song do |f|%>
   <%= f.label :name %>
   <%= f.text_field :name%><br>
-  <%= f.collection_radio_buttons :artist_id, @artist, :id, :name%>
+  <%= f.collection_radio_buttons :artist_id, @artists, :id, :name%>
   <%= f.collection_radio_buttons :genre_id, Genre.all, :id, :name%>
   <br>
   <%= f.submit :'Create Song'%>
