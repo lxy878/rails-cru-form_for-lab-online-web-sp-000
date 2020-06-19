@@ -4,7 +4,7 @@ class GenresController < ApplicationController
   end
 
   def create
-    genre = Genre
+    genre = Genre.create(post_params)
   end
 
   def edit
