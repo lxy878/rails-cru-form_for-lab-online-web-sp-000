@@ -29,7 +29,9 @@ class SongsController < ApplicationController
   end
 
   def index
+    @songs = Song.all
   end
+
   def post_params
     params.require(:song).permit(:name, :artist_id, :genre_id)
   end
