@@ -4,6 +4,7 @@
   <%= f.text_field :name%><br>
   <%= f.label :artist %>
   <%= f.collection_radio_buttons :artist_id, @artists, :id, :name%>
+  <%= f.label :genre %>
   <%= f.collection_radio_buttons :genre_id, @genres, :id, :name%>
   <br>
   <%= f.submit :'Create Song'%>
