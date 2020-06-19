@@ -4,7 +4,7 @@ class SongsController < ApplicationController
     @artists = Artist.all
     @genres = Genre.all
   end
-
+  
   def create
     song = Song.create(post_params)
     redirect_to song_path(song)
